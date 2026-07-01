@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Staff Southland WL</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="site-shell staff-shell" id="staffPage">
+    <header class="hero staff-hero">
+      <nav class="top-nav">
+        <a class="brand" href="index.html">
+          <img src="assets/southland-logo.png" alt="Southland WL" class="logo" onerror="this.onerror=null;this.src='images/logo.png'" />
+          <span class="brand-text">Southland WL</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Accueil</a>
+          <a href="whitelist.html">Whitelist</a>
+          <a href="staff.html">Staff</a>
+        </div>
+      </nav>
+      <div class="hero-content">
+        <span class="badge">Zone Staff</span>
+        <h1>AccÃ¨s candidatures</h1>
+        <p>Page rÃ©servÃ©e au personnel du serveur Discord pour consulter les candidatures soumises.</p>
+      </div>
+    </header>
+
+    <main class="container staff-container">
+      <section class="card staff-card" id="staffLogin">
+        <h2>Connexion Staff</h2>
+        <p>Entrez le code d'accÃ¨s du staff pour afficher les candidatures des joueurs.</p>
+        <label>Code staff</label>
+        <input type="password" id="staffPassword" placeholder="Code d'accÃ¨s" />
+        <button id="staffLoginButton" class="btn btn-primary">Se connecter</button>
+        <p class="staff-alert" id="staffAlert"></p>
+      </section>
+
+      <section class="card staff-card hidden" id="staffContent">
+        <div class="staff-actions">
+          <h2>Candidatures reÃ§ues</h2>
+          <button id="staffLogoutButton" class="btn btn-secondary">Se dÃ©connecter</button>
+        </div>
+        <div class="table-wrapper">
+          <table class="staff-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>ID Discord</th>
+                <th>Nom HRP</th>
+                <th>Nom RP</th>
+                <th>DisponibilitÃ©</th>
+                <th>Soumis le</th>
+              </tr>
+            </thead>
+            <tbody id="applicationsTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
