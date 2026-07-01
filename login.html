@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Connexion â€” Southland WL</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="top-nav">
+    <a class="brand" href="/">
+      <img src="assets/southland-logo.png" alt="Southland WL" class="logo" onerror="this.onerror=null;this.src='images/logo.png'" />
+      <span class="brand-text">Southland WL</span>
+    </a>
+    <div class="nav-links">
+      <a href="/">Accueil</a>
+      <a href="whitelist.html">Candidature</a>
+      <a href="#">Support</a>
+    </div>
+  </header>
+
+  <main class="auth-page">
+    <div class="auth-card">
+      <img src="assets/southland-logo.png" alt="logo" class="auth-logo" onerror="this.onerror=null;this.src='images/logo.png'" />
+      <h1>Connexion</h1>
+      <p class="muted">Reprends ta session et rejoins la communautÃ© Southland WL.</p>
+
+      <form class="auth-form" method="POST" action="/">
+        <label for="email">Email ou Discord</label>
+        <input id="email" name="email" type="text" placeholder="ex : user#1234 ou email@example.com" required />
+
+        <label for="password">Mot de passe</label>
+        <input id="password" name="password" type="password" placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢" required />
+
+        <div class="auth-actions">
+          <button type="submit" class="btn btn-primary">Se connecter</button>
+          <a class="btn btn-secondary" href="https://discord.gg/fETwR7Yzd" target="_blank" rel="noopener noreferrer">Rejoindre le Discord</a>
+        </div>
+      </form>
+
+      <div class="auth-links">
+        <a href="#">Mot de passe oubliÃ© ?</a>
+        <span>â€¢</span>
+        <a href="whitelist.html">Pas de compte ? S'inscrire</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
